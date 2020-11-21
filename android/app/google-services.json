@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "490597188227",
+    "firebase_url": "https://clarusway-bf453.firebaseio.com",
+    "project_id": "clarusway-bf453",
+    "storage_bucket": "clarusway-bf453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490597188227:android:e3638962493e5edc6011b6",
+        "android_client_info": {
+          "package_name": "com.myfirstproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "490597188227-62ut7p9gisjj464rr44qg1n8nt45q88d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAidh4zocn9iW5vwGoebC8Hux8GzHz85AQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "490597188227-62ut7p9gisjj464rr44qg1n8nt45q88d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
