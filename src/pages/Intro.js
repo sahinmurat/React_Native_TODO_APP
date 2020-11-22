@@ -1,6 +1,9 @@
 import React from 'react'
-import { View, Text } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import { View, Text,ScrollView} from 'react-native';
+
+
+import {TopicItem} from '../components/TopicItem'
+import { topicItem } from '../styles';
 
 const topics = [
     {
@@ -52,13 +55,16 @@ const topics = [
   
 
 export const Intro = (props) => {
+  function selectLanguage(){
+    alert('hhh')
+  }
     return (
-        <View style={{flex:1}}>
-            <Text>  Intro </Text>
-            <ScrollView>
+        <View style={topicItem.view} >
+  
+            <ScrollView horizontal={true}>
             {
                 topics.map((t)=>{
-                    return <TopicItem key={t.id} item={t} />
+                    return <TopicItem key={t.id} item={t} onSelect={()=>alert('kkk')} />
                 })
             }
             </ScrollView>

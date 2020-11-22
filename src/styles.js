@@ -8,5 +8,13 @@ export const topicItem = StyleSheet.create({
     },
     text:{
         fontSize:25
+    },
+    view:{
+        flex:1,
+        flexDirection:'row',
+        backgroundColor:'aquamarine',
+        // textAlign:'center',
+        // justifyContent:'center',
+        alignItems:'center'
     }
 })
