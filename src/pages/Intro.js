@@ -3,7 +3,7 @@ import { View, Text,ScrollView} from 'react-native';
 
 
 import {TopicItem} from '../components/TopicItem'
-import { topicItem } from '../styles';
+import { intro } from '../styles';
 
 const topics = [
     {
@@ -55,16 +55,19 @@ const topics = [
   
 
 export const Intro = (props) => {
-  function selectLanguage(){
-    alert('hhh')
+  function selectLanguage(lang){
+    props.navigation.navigate('Jobs',{selectedLanguage:lang})
   }
     return (
-        <View style={topicItem.view} >
+        <View style={intro.view} >
+          <View style={intro.lang}>
+            <Text style={intro.text}>Choose Your Language</Text>
+          </View>
   
-            <ScrollView horizontal={true}>
+            <ScrollView horizontal={true} contentContainerStyle={{alignItems:"center"}}>
             {
                 topics.map((t)=>{
-                    return <TopicItem key={t.id} item={t} onSelect={()=>alert('kkk')} />
+                    return <TopicItem key={t.id} item={t} onSelect={()=>selectLanguage(t.name)} />
                 })
             }
             </ScrollView>
