@@ -73,8 +73,8 @@ const renderItem = ({item}) => {return <JobItem item={item} />
     },[])
 
     return (
-        <TouchableOpacity onPress={()=>goBack()} style={jobs.opacity}>
-            <Text style={jobs.text}>  {selectedLanguage} </Text>
+        <TouchableOpacity  style={jobs.opacity}>
+            <Text style={jobs.text}> JOBS FOR  {selectedLanguage.toUpperCase()} </Text>
             <FlatList 
             data={data}
             renderItem={renderItem}

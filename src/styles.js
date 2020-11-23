@@ -48,6 +48,26 @@ export const jobs = StyleSheet.create({
     },
     text:{
         fontSize:25,
-        // flex:1
+        backgroundColor:'lightpink',
+        borderRadius:10,
+        fontWeight:"bold",
+        margin:20,
+        padding: 10
+    }
+})
+export const jobitem = StyleSheet.create({
+    opacity:{
+    backgroundColor:'lightgray',
+    margin:5,
+    padding:10,
+    borderRadius:10  
+    },
+    text1:{
+        fontSize:20,
+        fontWeight:'bold'
+    },
+    text2:{
+        marginTop:5,
+        fontSize:15,
     }
 })
