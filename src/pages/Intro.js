@@ -54,14 +54,12 @@ const topics = [
       color: '06d6a0',
     },
   ];
-  
-
-export const Intro = (props) => {
-  const [modal, setModal] = useState(false)
+  export const Intro = (props) => {
 
   function selectLanguage(lang){
     props.navigation.navigate('Jobs',{selectedLanguage:lang})
   }
+  
     return (
         <View style={intro.view} >
           <View style={intro.lang}>
@@ -75,13 +73,7 @@ export const Intro = (props) => {
                 })
             }
             </ScrollView>
-            <Modal visible={modal} animationInTiming='5' animationType='slide' >
-              <View style={{backgroundColor:'orange'}}>
-              <Button title='kapa' onPress={()=>{setModal(false)}}/>
-              <Text>Hey '</Text>
-              </View>
-            </Modal>
-            <Button title='ac ' onPress={()=>setModal(true)} />
+            
         </View>
     )
 }

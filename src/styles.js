@@ -27,7 +27,7 @@ export const intro = StyleSheet.create({
     view:{
         flex:1,
         flexDirection:'column',
-        backgroundColor:'aquamarine',
+        backgroundColor:'#58C6B8',
         textAlign:'center',
         justifyContent:'center',
         alignItems:'center'
@@ -40,7 +40,7 @@ export const intro = StyleSheet.create({
 })
 
 export const jobs = StyleSheet.create({
-    opacity:{
+    view:{
         flex:1,
         backgroundColor:'lightblue',
         alignItems:'center',
@@ -53,7 +53,16 @@ export const jobs = StyleSheet.create({
         fontWeight:"bold",
         margin:20,
         padding: 10
-    }
+    },
+    opacity:{
+        color:'white',
+        backgroundColor:'#52A9ED',
+        padding:10,
+        borderRadius:10,
+        position:"absolute",
+        bottom:10,
+        right:10
+      }
 })
 export const jobitem = StyleSheet.create({
     opacity:{
@@ -71,3 +80,29 @@ export const jobitem = StyleSheet.create({
         fontSize:15,
     }
 })
+
+export const modal = StyleSheet.create({
+    view:{
+        backgroundColor:'orange'
+    },
+    text:{
+        fontSize:15,
+        fontWeight:'700',
+        borderWidth:1,
+        margin:5,
+        padding:5, 
+        borderRadius:5, 
+        backgroundColor:'lightpink'
+    },
+    touch:{
+        backgroundColor:'#52A9ED',
+        borderWidth:1
+    },
+    touchtext:{
+        fontSize:25,
+        color:'white',
+        fontWeight:'400',
+        alignSelf:'center'
+    }
+})
+

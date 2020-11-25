@@ -13,8 +13,9 @@ export const SavedJobs = () => {
         setSavedJobs(list)
     })
 
-
-
+    console.log('{ "name":"John", "age":30, "city":"New York"}')
+    const obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
+    console.log(obj)
     return (
         <View>
            <FlatList
