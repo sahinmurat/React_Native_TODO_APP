@@ -1,5 +1,7 @@
-import React from 'react'
-import { View, Text,ScrollView} from 'react-native';
+import React, {useState} from 'react'
+import { View, Text,ScrollView, Button} from 'react-native';
+import Modal from 'react-native-modal';
+
 
 
 import {TopicItem} from '../components/TopicItem'
@@ -55,6 +57,8 @@ const topics = [
   
 
 export const Intro = (props) => {
+  const [modal, setModal] = useState(false)
+
   function selectLanguage(lang){
     props.navigation.navigate('Jobs',{selectedLanguage:lang})
   }
@@ -71,6 +75,13 @@ export const Intro = (props) => {
                 })
             }
             </ScrollView>
+            <Modal visible={modal} animationInTiming='5' animationType='slide' >
+              <View style={{backgroundColor:'orange'}}>
+              <Button title='kapa' onPress={()=>{setModal(false)}}/>
+              <Text>Hey '</Text>
+              </View>
+            </Modal>
+            <Button title='ac ' onPress={()=>setModal(true)} />
         </View>
     )
 }
